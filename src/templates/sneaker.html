@@ -25,7 +25,11 @@
 </form>
 <br>
 {{#sneaker}}
-{{username}}: {{brand}} {{name}} {{year}}, {{price}} &amp; {{size}} <a href="/edit?id={{id}}"}}>Edit</a>  <a href="/delete-message?id={{id}}"}}>Delete</a><br>
+{{username}}: {{brand}} {{name}} {{year}}, {{price}} &amp; {{size}} <a href="/edit?id={{id}}"}}><button type="button">Edit</button></a>
+<form action="delete-message" method="post" style="display: inline-block">
+    <input type="hidden" name="id" value="{{id}}"/>
+    <button type="submit">Delete</button>
+</form>
 {{/sneaker}}
 <br>
 
