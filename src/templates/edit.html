@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit/Delete</title>
+</head>
+<body>
+
+<form action="edit-message" method="post">
+    <input type="hidden" name="id" value="{{id}}"/>
+    <input type="text" name="brand" placeholder="Enter the brand"/>
+    <input type="text" name="name" placeholder="Enter the name"/>
+    <input type="number" name="year" placeholder="Enter the year"/>
+    <input type="number" name="price" placeholder="Enter the price"/>
+    <input type="number" name="size" placeholder="Enter your size"/>
+    <button type="submit">Edit</button>
+</form>
+
+<form action="delete-message" method="post">
+    <input type="hidden" name="id" value="{{id}}"/>
+    <input type="text" name="brand" placeholder="Enter the brand"/>
+    <input type="text" name="name" placeholder="Enter the name"/>
+    <input type="number" name="year" placeholder="Enter the year"/>
+    <input type="number" name="price" placeholder="Enter the price"/>
+    <input type="number" name="size" placeholder="Enter your size"/>
+    <button type="submit">Delete</button>
+</form>
+
+</body>
+</html>

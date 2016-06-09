@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sneakers</title>
+</head>
+<body>
+<form action="/logout" method="post" style="float: right">
+    <button type="submit">Logout</button>
+</form>
+
+<h1>Welcome {{name}}:</h1>
+<p id="demo"></p>
+<script>
+    document.getElementById("demo").innerHTML = Date();
+</script>
+
+<form action="/create-sneaker" method="post">
+    <input type="text" name="brand" placeholder="Enter the brand"/>
+    <input type="text" name="name" placeholder="Enter the name"/>
+    <input type="number" name="year" placeholder="Enter the year"/>
+    <input type="number" name="price" placeholder="Enter the price"/>
+    <input type="number" name="size" placeholder="Enter your size"/>
+    <button type="submit">Submit</button>
+</form>
+<br>
+{{#sneaker}}
+{{username}}: {{brand}} {{name}} {{year}}, {{price}} &amp; {{size}} <a href="/edit?id={{id}}"}}>Edit</a>  <a href="/delete-message?id={{id}}"}}>Delete</a><br>
+{{/sneaker}}
+<br>
+
+
+</body>
+</html>
