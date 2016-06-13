@@ -14,6 +14,7 @@ public class Main {
     static ArrayList<Sneaker> sneakers = new ArrayList<>();
 
     public static void main(String[] args) {
+        Spark.staticFileLocation("public");
         Spark.init();
         Spark.get(
                 "/",

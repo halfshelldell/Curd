@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Sneakers</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="icon" type="image/png"
+          href="https://sghq.us/wp-content/uploads/2014/03/Sneaker-Favicon.png"/>
 </head>
 <body>
 <form action="/logout" method="post" style="float: right">
-    <button type="submit">Logout</button>
+    <button class="exit-btn exit-btn-1" type="submit">Logout</button>
 </form>
 
 <h1>Welcome {{name}}:</h1>
@@ -14,25 +17,25 @@
 <script>
     document.getElementById("demo").innerHTML = Date();
 </script>
-
 <form action="/create-sneaker" method="post">
     <input type="text" name="brand" placeholder="Enter the brand"/>
     <input type="text" name="name" placeholder="Enter the name"/>
     <input type="number" name="year" placeholder="Enter the year"/>
     <input type="number" name="price" placeholder="Enter the price"/>
     <input type="number" name="size" placeholder="Enter your size"/>
-    <button type="submit">Submit</button>
+    <button class="submit-button" type="submit">Submit</button>
 </form>
 <br>
+<div id="submission">
 {{#sneaker}}
-{{username}}: {{brand}} {{name}} {{year}}, {{price}} &amp; {{size}} <a href="/edit?id={{id}}"}}><button type="button">Edit</button></a>
+{{username}}: {{brand}} {{name}} {{year}}, {{price}} &amp; {{size}}</div><a href="/edit?id={{id}}"}}><button type="button">Edit</button></a>
 <form action="delete-message" method="post" style="display: inline-block">
     <input type="hidden" name="id" value="{{id}}"/>
     <button type="submit">Delete</button>
 </form>
 {{/sneaker}}
 <br>
-
-
 </body>
+<br>
+<footer>COPYRIGHT 2016 &copy;</footer>
 </html>
