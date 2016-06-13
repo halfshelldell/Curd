@@ -19,13 +19,6 @@ p {
     color: floralwhite;
 }
 
-#submission {
-    font-weight: bold;
-    text-shadow: 2px 2px 4px #FFF;
-    font-family:'Impact', sans-serif;
-    font-size: large;
-}
-
 .submit-button {
     background-color:#000;
     color:#fff;

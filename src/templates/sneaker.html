@@ -26,13 +26,13 @@
     <button class="submit-button" type="submit">Submit</button>
 </form>
 <br>
-<div id="submission">
+<div id="sub">
 {{#sneaker}}
-{{username}}: {{brand}} {{name}} {{year}}, {{price}} &amp; {{size}}</div><a href="/edit?id={{id}}"}}><button type="button">Edit</button></a>
+{{username}}: {{brand}} {{name}} {{year}}, {{price}} &amp; {{size}}</div><a href="/edit?id={{id}}"}}><button style="display: inline-block" type="button">Edit</button></a>
 <form action="delete-message" method="post" style="display: inline-block">
     <input type="hidden" name="id" value="{{id}}"/>
-    <button type="submit">Delete</button>
-</form>
+    <button style="display: inline-block" type="submit">Delete</button><br>
+</form><br>
 {{/sneaker}}
 <br>
 <img src="http://cdn.niketalk.com/8/8d/400x300px-LL-8dddbf4d_tumblr_msha49ULLa1r14t54o1_400.gif" alt="Shoes" style="width:115px;height:140px;">
