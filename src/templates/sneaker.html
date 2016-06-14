@@ -26,9 +26,11 @@
     <button class="submit-button" type="submit">Submit</button>
 </form>
 <br>
-<div id="sub">
+
 {{#sneaker}}
-{{username}}: {{brand}} {{name}} {{year}}, {{price}} &amp; {{size}}</div><a href="/edit?id={{id}}"}}><button style="display: inline-block" type="button">Edit</button></a>
+<div id="sub" style="display: inline-block">
+{{username}}: {{brand}} {{name}} {{year}}, {{price}} &amp; {{size}}</div><a href="/edit?id={{id}}">
+    <button style="display: inline-block" type="button">Edit</button></a>
 <form action="delete-message" method="post" style="display: inline-block">
     <input type="hidden" name="id" value="{{id}}"/>
     <button style="display: inline-block" type="submit">Delete</button><br>
