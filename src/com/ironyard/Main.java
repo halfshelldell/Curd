@@ -171,8 +171,8 @@ public class Main {
                         throw new Exception("Not logged in");
                     }
 
-                    String brand = request.queryParams("name");
-                    String name = request.queryParams("brand");
+                    String brand = request.queryParams("brand");
+                    String name = request.queryParams("name");
                     int year = Integer.valueOf(request.queryParams("year"));
                     float price = Float.valueOf(request.queryParams("price"));
                     int size = Integer.valueOf(request.queryParams("size"));

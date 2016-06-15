@@ -28,8 +28,8 @@
 <br>
 
 {{#sneaker}}
-<div id="sub" style="display: inline-block">
-{{username}}: {{brand}} {{name}} {{year}}, {{price}} &amp; {{size}}</div><a href="/edit?id={{id}}">
+<!--<div id="sub" style="display: inline-block">-->
+{{username}}: {{brand}} {{name}} {{year}} {{price}} &amp; {{size}}<a href="/edit?id={{id}}">
     <button style="display: inline-block" type="button">Edit</button></a>
 <form action="delete-message" method="post" style="display: inline-block">
     <input type="hidden" name="id" value="{{id}}"/>
